@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 using csharp_ecommerce_db;
 
-public class OrderContext : DbContext
+public class Ecommerce : DbContext
     {
         public DbSet<Order> Orders { get; set; }
         public DbSet<Employee> Employees { get; set; }

@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace csharp_ecommerce_db.Migrations
 {
-    [DbContext(typeof(OrderContext))]
+    [DbContext(typeof(Ecommerce))]
     [Migration("20220930133128_InitialEcommerce")]
     partial class InitialEcommerce
     {
