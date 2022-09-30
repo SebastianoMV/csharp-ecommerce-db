@@ -8,17 +8,14 @@ using System.Threading.Tasks;
 
 namespace csharp_ecommerce_db
 {
-    [Table("customer")]
-    public class Customer
+    [Table("product")]
+    public class Product
     {
         [Key]
-        public int CustomerId { get; set; }
+        public int ProductId { get; set; }
         public string Name { get; set; }
-        public string Surname { get; set; }
-        [Required]
-        public string Email { get; set; }
-
-        List<Order> orders { get; set; }
-
+        public string description { get; set; }
+        public double prince { get; set; }
+        public List<Order> ListOrders { get; set; }
     }
 }
